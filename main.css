@@ -1,0 +1,105 @@
+html,body {
+	font-family: Century Gothic;
+}
+
+nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	padding:0px;
+	box-sizing: border-box;
+	background-color: rgb(220,220,220);
+}
+
+nav ul{
+	margin: 0px;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+nav ul li{
+	display:inline-block;
+	margin: 15px;
+	font-weight: bold;
+}
+
+section.educ,section.proj {
+	padding-top: 40px;
+	padding-bottom:20px;
+}
+
+article.school {
+	margin-bottom: 24px;
+	margin-left: 80px;
+	margin-right: 80px;
+	text-align: justify;
+}
+
+article.school div.schoolname {
+	font-weight:bold;
+}
+
+article.school div.schooldesc{
+	font-style: italic;
+}
+
+section.educ {
+	background-color:rgb(120,255,120);
+}
+
+section.proj {
+	text-align: center;
+	margin: auto;
+	background-color:rgb(255,120,120);
+}
+
+section.intro {
+	padding-top: 140px;
+	padding-bottom: 100px;
+	background-color:rgb(0,0,0);
+	font-size: 80px;
+	font-family: Century Gothic;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+
+section.about-me {
+	margin-left: 80px;
+	margin-right: 80px;
+	text-align: justify;
+}
+
+section.contacts {
+	text-align: center;
+}
+
+section h3 {
+	font-size: 48px;
+	text-align: center;
+	line-height: 10%;
+}
+
+div#iframe {
+	padding: 10px;
+	align: center;
+	width: 560px;
+	height: 315px;
+}
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
