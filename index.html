@@ -1,0 +1,87 @@
+<html>
+	<title>Cheldie's Resume</title>
+	
+	<head>
+		<link rel="stylesheet" href="main.css" type="text/css">
+		
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-firestore.js"></script>
+		<script src="jquery.js"></script>
+
+		<script>
+			// Your web app's Firebase configuration
+			var firebaseConfig = {
+			  apiKey: "AIzaSyDm6w57PlbWhnWgIuvD4KhFkY8IjHUKDuQ",
+			  authDomain: "mp1-cruz.firebaseapp.com",
+			  databaseURL: "https://mp1-cruz.firebaseio.com",
+			  projectId: "mp1-cruz",
+			  storageBucket: "mp1-cruz.appspot.com",
+			  messagingSenderId: "407048752716",
+			  appId: "1:407048752716:web:f188e65caa7f8751ad6ee9"
+			};
+			// Initialize Firebase
+			firebase.initializeApp(firebaseConfig);
+			const db = firebase.firestore();
+		</script>
+	</head>
+	
+	<body>
+		<a name="home"></a>
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#educ">Education History</a></li>
+				<li><a href="#orgs">Organizations</a></li>
+				<li><a href="#proj">Projects</a></li>
+				<li><a href="#about-me">About Me</a></li>
+				<li><a href="#contacts">Contact Me!</a></li>
+			</ul>
+		</nav>
+		
+		<section class="intro">
+			<div class="floating">
+				Cheldie Ezra Rosario Cruz's Resume
+			</div>
+		</section>
+		
+		<a name = "educ"></a>
+		<section class="educ">
+			<div class="educ">
+				<h3>Schools I attended</h3>
+			</div>
+		</section>
+
+		<a name = "orgs"></a>
+		<section class="orgs">
+			<div class="orgs">
+				<h3>Orgs I've been a part of</h3>
+			</div>
+		</section>
+
+		<a name = "proj"></a>
+		<section class="proj">
+			<div class="proj">
+				<h3>Projects I've worked on</h3>
+				<div>
+					Most of the projects (that I'm proud of) are videos. I have proficiency in narration, in video-editing, using instruments, and (not to toot my own horn) singing as well.
+				</div>
+			</div>
+		</section>
+
+		<a name = "about-me"></a>
+		<section class="about-me">
+			<div class="about-me">
+				<h3>About me.</h3>
+			</div>
+		</section>
+
+		<a name = "contacts"></a>
+		<section class="contacts">
+			<div class="contacts">
+				<h3>Contact me!</h3>
+			</div>
+		</section>
+		<script src="app.js"></script>
+	</body>
+</html>

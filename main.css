@@ -1,0 +1,161 @@
+html,body {
+	font-family: Century Gothic;
+}
+
+.login {
+	background-color:#ccc;
+	position:fixed;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	z-index:1000;
+}
+
+nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	padding:0px;
+	box-sizing: border-box;
+	background-color: rgb(220,220,220);
+}
+
+nav ul{
+	margin: 0px;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+nav ul li{
+	display:inline-block;
+	margin: 15px;
+	font-weight: bold;
+}
+
+section.educ,section.proj, section.orgs{
+	padding-top:40px;
+	padding-bottom:20px;
+}
+
+section.educ article {
+	margin-bottom: 24px;
+	margin-left: 80px;
+	margin-right: 80px;
+	text-align: justify;
+}
+
+section.educ div.schoolname {
+	font-weight:bold;
+}
+
+section.educ div.schooldesc {
+	font-style:italic;
+}
+
+section.educ {
+	background-color:rgb(120,255,120);
+	text-align:center;
+}
+
+section.proj {
+	text-align: center;
+	margin: auto;
+	background-color:rgb(255,120,120);
+}
+
+section.orgs {
+	text-align: center;
+	background-color:rgb(120,120,255);
+}
+
+section.orgs .name {
+	font-weight: bold;
+}
+
+section.orgs div.desc {
+	margin-left: 180px;
+	margin-right: 180px;
+	font-style: italic;
+	font-weight: lighter;
+}
+
+section.orgs img{
+	height: 300px;
+	width: 300px;
+	margin-bottom: 50px;
+}
+
+section.intro {
+	padding-top: 140px;
+	padding-bottom: 100px;
+	background-color:rgb(0,0,0);
+	font-size: 80px;
+	font-family: Century Gothic;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+
+section.about-me p{
+	margin-left: 80px;
+	margin-right: 80px;
+	text-align: justify;
+}
+
+section.about-me {
+	padding-top: 50px;
+	background-color:rgb(50,210,165);
+	padding-bottom: 50px;
+}
+
+section.contacts {
+	padding-top: 50px;
+	text-align: center;
+	background-color: blanchedalmond;
+	padding-bottom: 50px;
+}
+
+section.contacts div.name {
+	font-weight: bold;
+}
+
+section h3 {
+	font-size: 48px;
+	text-align: center;
+	line-height: 10%;
+}
+
+section.proj iframe {
+	padding: 10px;
+	align: center;
+	width: 560px;
+	height: 315px;
+	border: 0px;
+}
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+form#addame {
+	text-align:center;
+}
+
+button {
+	height: 25px;
+	width: 75px;
+}

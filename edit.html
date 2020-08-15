@@ -1,0 +1,117 @@
+<html>
+	<head>
+		<title>Sign in</title>
+		<link rel="stylesheet" href="main.css" type="text/css">
+		<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-firestore.js"></script>
+		<script src="jquery.js"></script>
+		<script>
+			var firebaseConfig = {
+				apiKey: "AIzaSyDm6w57PlbWhnWgIuvD4KhFkY8IjHUKDuQ",
+				authDomain: "mp1-cruz.firebaseapp.com",
+				databaseURL: "https://mp1-cruz.firebaseio.com",
+				projectId: "mp1-cruz",
+				storageBucket: "mp1-cruz.appspot.com",
+				messagingSenderId: "407048752716",
+				appId: "1:407048752716:web:f188e65caa7f8751ad6ee9"
+			};
+			// Initialize Firebase
+			firebase.initializeApp(firebaseConfig);
+			const db = firebase.firestore();
+		</script>
+	</head>
+
+	<body>
+		<div class = "login">
+			<h3>Sign in.</h3>
+			<div id = "formContainer">
+				<input type = "email" placeholder = "Email" id = "email"/>
+				<input type = "password" placeholder = "Password" id = "password"/>
+				<button onclick="signIn()" id="signIn">Sign In</button>
+			</div>
+		</div>
+
+		<a name="home"></a>
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#educ">Education History</a></li>
+				<li><a href="#orgs">Organizations</a></li>
+				<li><a href="#proj">Projects</a></li>
+				<li><a href="#about-me">About Me</a></li>
+				<li><a href="#contacts">Contact Me!</a></li>
+			</ul>
+		</nav>
+		
+		<section class="intro">
+			<div class="floating">
+				Cheldie Ezra Rosario Cruz's Resume
+			</div>
+		</section>
+		
+		<a name = "educ"></a>
+		<section class="educ">
+			<div class="educ">
+				<h3>Schools I attended</h3>
+			</div>
+			<form id="addeduc">
+				<input type="text" name="schoolname" placeholder="School name"><br>
+				<textarea type="text" name="schooldesc" placeholder="What's with this school?"></textarea><br>
+				<button>Add!</button>
+			</form>
+		</section>
+
+		<a name = "orgs"></a>
+		<section class="orgs">
+			<div class="orgs">
+				<h3>Orgs I've been a part of</h3>
+			</div>
+			<form id="addorg">
+				<input type="text" name="orgname" placeholder="Org's name"><br>
+				<textarea type="text" name="orgdesc" placeholder="What's with this org?"></textarea><br>
+				<input type="url" name="orglink" placeholder="Link of org's picture"><br>
+				<button>Add!</button>
+			</form>
+		</section>
+
+		<a name = "proj"></a>
+		<section class="proj">
+			<div class="proj">
+				<h3>Projects I've worked on</h3>
+				<div>
+					Most of the projects (that I'm proud of) are videos. I have proficiency in narration, in video-editing, using instruments, and (not to toot my own horn) singing as well.
+				</div>
+			</div>
+			<form id="addproj">
+				<input type="url" name="projlink" placeholder="A YT link of my project~"><br>
+				<button>Add!</button>
+			</form>
+		</section>
+
+		<a name = "about-me"></a>
+		<section class="about-me">
+			<div class="about-me">
+				<h3>About me.</h3>
+			</div>
+			<form id="addame">
+				<textarea type="text" name="addame" placeholder="Is there something else about me?"></textarea><br>
+				<button>Add!</button>
+			</form>
+		</section>
+
+		<a name = "contacts"></a>
+		<section class="contacts">
+			<div class="contacts">
+				<h3>Contact me!</h3>
+			</div>
+			<form id="addcont">
+				<input type="text" name="contname" placeholder="On what platform?"><br>
+				<input type="url" name="contlink" placeholder="Link of your profile"><br>
+				<button>Add!</button>
+			</form>
+		</section>
+		<script src="jsforediting.js"></script>
+		<script src="edit.js"></script>
+	</body>
+</html>
